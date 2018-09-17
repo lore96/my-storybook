@@ -1,0 +1,11 @@
+@import '../../index.scss';
+
+$color: red;
+
+h1 {
+    color: $color;
+};
+
+p {
+    font-family: myFirstFont;
+}
