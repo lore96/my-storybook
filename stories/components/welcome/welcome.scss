@@ -1,11 +1,14 @@
 @import '../../index.scss';
 
-$color: red;
-
 h1 {
-    color: $color;
-};
+    margin-top: 0px;
+    margin-bottom: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
 
 p {
-    font-family: myFirstFont;
+    padding: 2%;
+    margin-top: 0px;
+    margin-bottom: 5px;
 }
