@@ -2,6 +2,8 @@ import React from 'react';
 
 import { storiesOf } from '@storybook/react';
 
+import style from './welcome.scss';
+
 storiesOf('Welcome', module)
   .add('Hello', () => (
     <div className="bkg-light">
@@ -23,7 +25,7 @@ storiesOf('Welcome', module)
             <span role="img" aria-label="science">👨🏼‍🔬 🔬</span>
           </p>
           <br />
-          <p className="centered wow">Let‘s made the science begin!</p>
+          <p className="centered wow flash">Let‘s made the science begin!</p>
           <p className="centered">
             Thank you, Lorenzo
             <span role="img" aria-label="happy">😀</span>
