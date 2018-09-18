@@ -13,7 +13,7 @@ storiesOf('Welcome', module)
             HELLO EXPLORER
             <span role="img" aria-label="explorer">🕵🏻‍♂️</span>
           </h1>
-          <p>
+          <p className="centered">
           This is where I will collect all my small components,
            samples, utilities etc. etc.
             <br />
