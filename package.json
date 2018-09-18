@@ -6,7 +6,8 @@
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-scripts": "1.1.5",
-    "styled-components": "^3.4.6"
+    "styled-components": "^3.4.6",
+    "@storybook/react": "^3.4.10"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -14,13 +15,13 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "lint": "eslint src/ stories/"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.10",
     "@storybook/addon-links": "^3.4.10",
     "@storybook/addons": "^3.4.10",
-    "@storybook/react": "^3.4.10",
     "babel-core": "^6.26.3",
     "babel-runtime": "^6.26.0",
     "eslint": "^5.6.0",
