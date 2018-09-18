@@ -19,7 +19,7 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "lint": "eslint src/ stories/"
+    "lint": "eslint stories/"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
