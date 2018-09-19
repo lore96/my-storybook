@@ -7,9 +7,9 @@ import style from '../../../src/pureCssItem/circle/circle.scss';
 storiesOf('CSS', module)
   .add('Circle', () => (
     <div className="atomContainer">
-      <div className="circle rotate__X"></div>
-      <div className="circle rotate__Y"></div>
-      <div className="circle"></div>
+      <div className="circle rotate__90"></div>
+      <div className="circle rotate__180"></div>  
+      <div className="circle rotate__250"></div>
       <div className="nestedCircle"></div>
     </div>
   ));

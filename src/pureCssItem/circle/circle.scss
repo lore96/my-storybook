@@ -1,5 +1,5 @@
-$box-container: 500px;
-$center-circle: 100px;
+$box-container: 30em;
+$center-circle: 5em;
 
 
 .atomContainer {
@@ -32,11 +32,25 @@ $center-circle: 100px;
     background-color: #000000;
     z-index: 2;
     padding: 0;
-    margin: (($box-container / 2) - ($center-circle / 2)) 0px 0px (($box-container / 2) - ($center-circle / 2));
+    margin: (($box-container / 2) - ($center-circle / 2)) 0em 0em (($box-container / 2) - ($center-circle / 2));
 }
 
-// ANIMATION
+.rotate__90 {
+    transform: rotate3d(1, 1, 1, 90deg);
+}
 
+.rotate__180 {
+    transform: rotate3d(1, 1, 1, 180deg);
+}
+
+.rotate__250 {
+    transform: rotate3d(1, 1, 1, 250deg);
+}
+
+
+
+// ANIMATION
+/*
 .rotate__X {
     animation: rotate-x 4s both infinite;
 }
@@ -46,6 +60,7 @@ $center-circle: 100px;
 }
 .rotate__XY {
     animation: rotate-xy 4s both infinite;
+    transform-style: preserve-3d;
 }
 
 @keyframes rotate-x {
@@ -58,7 +73,7 @@ $center-circle: 100px;
     };
 
     100% {
-      transform: rotateY(0deg);
+      transform: rotateY(0);
     };
 };
 
@@ -72,8 +87,19 @@ $center-circle: 100px;
     };
 
     100% {
-      transform: rotateX(0deg);
+      transform: rotateX(0);
     };
 };
 
-@keyframes rotate-xy {};
+@keyframes rotate-xy {
+    0 {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+    50% {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+    100% {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+};
+*/
