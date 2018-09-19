@@ -1,8 +1,10 @@
 $box-container: 30em;
 $center-circle: 5em;
+$inner-circle: 2em;
 
 
 .atomContainer {
+    margin-top: 20px;
     width: $box-container;
     min-height: $box-container;
     padding: 0;
@@ -19,10 +21,22 @@ $center-circle: 5em;
     border-radius: 50%;
     width: $box-container;
     height: $box-container;
-    border: solid 5px;
+    border: solid 0.2em;
     padding: 0;
     color: #000000;
     z-index: 1;
+
+    .inner-circle{
+        width: $inner-circle;
+        height: $inner-circle;
+        padding: 0;
+        position: absolute;
+        background-color: #000000;
+        border-radius: 50%;
+        top: ($box-container / 2) - ($inner-circle / 2) - 0.2em;
+        left: ($box-container / 2) - ($inner-circle / 2) - 0.2em;
+        animation: rotate 4s linear infinite;
+    }
 }
 
 .nestedCircle{
@@ -35,7 +49,8 @@ $center-circle: 5em;
     margin: (($box-container / 2) - ($center-circle / 2)) 0em 0em (($box-container / 2) - ($center-circle / 2));
 }
 
-.rotate__90 {
+
+/*.rotate__90 {
     transform: rotate3d(1, 1, 1, 90deg);
 }
 
@@ -45,9 +60,14 @@ $center-circle: 5em;
 
 .rotate__250 {
     transform: rotate3d(1, 1, 1, 250deg);
+}*/
+
+$animation-frame-tranlsate: $box-container / 2 ;
+
+@keyframes rotate {
+     from { transform: rotate(0deg) translateX(-$box-container / 2) rotate(0deg); }
+     to   { transform: rotate(360deg) translateX(-$box-container / 2) rotate(360deg); }
 }
-
-
 
 // ANIMATION
 /*
