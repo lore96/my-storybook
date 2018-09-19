@@ -10,8 +10,12 @@ storiesOf('CSS', module)
       <div className="circle rotate__90">
         <div className="inner-circle"></div>
       </div>
-      <div className="circle rotate__180"></div>  
-      <div className="circle rotate__250"></div>
+      <div className="circle rotate__180">
+        <div className="inner-circle"></div>
+      </div>  
+      <div className="circle rotate__250">
+        <div className="inner-circle"></div>
+      </div>
       <div className="nestedCircle"></div>
     </div>
   ));

@@ -50,7 +50,7 @@ $inner-circle: 2em;
 }
 
 
-/*.rotate__90 {
+.rotate__90 {
     transform: rotate3d(1, 1, 1, 90deg);
 }
 
@@ -60,7 +60,7 @@ $inner-circle: 2em;
 
 .rotate__250 {
     transform: rotate3d(1, 1, 1, 250deg);
-}*/
+}
 
 $animation-frame-tranlsate: $box-container / 2 ;
 
