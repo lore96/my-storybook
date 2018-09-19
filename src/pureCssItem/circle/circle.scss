@@ -1,10 +1,10 @@
-$circle-size: 400px;
+$box-container: 500px;
 $center-circle: 100px;
 
 
 .atomContainer {
-    width: 400px;
-    min-height: 400px;
+    width: $box-container;
+    min-height: $box-container;
     padding: 0;
     display: flex;
     position: relative;
@@ -17,8 +17,8 @@ $center-circle: 100px;
     top:0;
     left:0;
     border-radius: 50%;
-    width: $circle-size;
-    height: $circle-size;
+    width: $box-container;
+    height: $box-container;
     border: solid 5px;
     padding: 0;
     color: #000000;
@@ -32,7 +32,7 @@ $center-circle: 100px;
     background-color: #000000;
     z-index: 2;
     padding: 0;
-    margin: (($circle-size / 2) - ($center-circle / 2)) 0px 0px (($circle-size / 2) - ($center-circle / 2));
+    margin: (($box-container / 2) - ($center-circle / 2)) 0px 0px (($box-container / 2) - ($center-circle / 2));
 }
 
 // ANIMATION
