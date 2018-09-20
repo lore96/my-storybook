@@ -3,16 +3,19 @@ ul {
 }
 
 .sphere-container {
+    margin-top: 20px;
     width: 500px;
-    min-height: 500px;
-
+    height: 500px;
     transform: rotateX(45deg) rotateY(45deg);
     transform-style: preserve-3d;
 };
 
 .sphere {
+    position: relative;
+    width: 70%;
+    height: 70%;
     transform-style: preserve-3d;
-    animation: rotate 4s linear infinite;
+    animation: rotate-v 4s linear infinite;
 }
 
 
@@ -21,45 +24,39 @@ ul {
     top: 0;
     left: 0;
     padding: 0;
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
     border: 5px;
     border-style: dashed;
     border-color: #000000;
     border-radius: 50%;
     opacity: 1;
     transform-style: preserve-3d;
-    // animation: rotate 4s infinite linear;
 }
 
 .plane-v:nth-child(1) {
     color: #000000;
     transform: rotateY(0deg);
-    // animation-delay: 0s;
 }
 
 .plane-v:nth-child(2) {
     color: #000000;
     transform: rotateY(36deg);
-    // animation-delay: 0s;
 }
 
 .plane-v:nth-child(3) {
     color: #000000;
     transform: rotateY(72deg);
-    // animation-delay: 0s;
 }
 
 .plane-v:nth-child(4) {
     color: #000000;
     transform: rotateY(108deg);
-    // animation-delay: 0s;
 }
 
 .plane-v:nth-child(5) {
     color: #000000;
     transform: rotateY(144deg);
-    // animation-delay: 0s;
 };
 
 .sphere .plane-h {
@@ -67,49 +64,48 @@ ul {
     top: 0;
     left: 0;
     padding: 0;
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
     border: 5px;
     border-style: dashed;
     border-color: #000000;
     border-radius: 50%;
     opacity: 1;
     transform-style: preserve-3d;
-    // animation: rotate 4s infinite linear;
 }
 
 .plane-h:nth-child(1) {
     color: #000000;
     transform: rotateX(0deg);
-    // animation-delay: 0s;
 }
 
 .plane-h:nth-child(2) {
     color: #000000;
     transform: rotateX(36deg);
-    // animation-delay: 0s;
 }
 
 .plane-h:nth-child(3) {
     color: #000000;
     transform: rotateX(72deg);
-    // animation-delay: 0s;
 }
 
 .plane-h:nth-child(4) {
     color: #000000;
     transform: rotateX(108deg);
-    // animation-delay: 0s;
 }
 
 .plane-h:nth-child(5) {
     color: #000000;
     transform: rotateX(144deg);
-    // animation-delay: 0s;
 };
 
-@keyframes rotate {
+@keyframes rotate-v {
     to {
         transform: rotateY(360deg);
+    }
+}
+@keyframes rotate-x {
+    to {
+        transform: rotateX(360deg);
     }
 }
