@@ -6,16 +6,8 @@ import style from '../../../src/pureCssItem/circle/circle.scss';
 
 storiesOf('CSS', module)
   .add('Circle', () => (
-    <div className="atomContainer">
-      <div className="circle rotate__90">
-        <div className="inner-circle"></div>
+    <div className="circle-container">
+      <div className="circle">
       </div>
-      <div className="circle rotate__180">
-        <div className="inner-circle"></div>
-      </div>  
-      <div className="circle rotate__250">
-        <div className="inner-circle"></div>
-      </div>
-      <div className="nestedCircle"></div>
     </div>
   ));
