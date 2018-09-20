@@ -4,7 +4,12 @@ $circle-diameter: 500px;
 $sphere-diameter: 50px;
 $animation-frame-tranlsate: $circle-diameter / 2 ;
 
-
+.orbiting-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 0;
+}
 .orbit-sphere-scene {
     position: absolute;
     margin: 50px 10px;
@@ -26,6 +31,19 @@ $animation-frame-tranlsate: $circle-diameter / 2 ;
 .animating-orbit {
     animation: orbit 4s linear infinite;
 }
+
+.no-padding {
+    padding: 0;
+}
+
+.atom-rotate__90 {
+    transform: rotate3d(1, 1, 1, 90deg);
+}
+
+.atom-rotate__180 {
+    transform: rotate3d(1, 1, 1, 180deg);
+}
+
 
 @keyframes orbit {
      from { transform: rotate(0deg) translateX($animation-frame-tranlsate) rotate(0deg); }
