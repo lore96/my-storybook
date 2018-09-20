@@ -26,6 +26,7 @@ $animation-frame-tranlsate: $circle-diameter / 2 ;
     width: $sphere-diameter;
     height: $sphere-diameter;
     padding: 0;
+    z-index: 2;
 }
 
 .animating-orbit {

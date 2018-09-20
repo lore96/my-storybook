@@ -26,7 +26,5 @@ storiesOf('CSS', module)
   .add('Orbit Sphere', () => (
     <div className="orbit-sphere-scene">
         {orbitSphereJSX}
-        {orbitSphereJSX}
-        {orbitSphereJSX}
     </div>
 ));
