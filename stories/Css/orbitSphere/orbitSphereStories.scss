@@ -1,9 +1,33 @@
 @import '../../../src/pureCssItem/orbitSphere/orbitSphere.scss';
 
+$circle-diameter: 500px;
+$sphere-diameter: 50px;
+$animation-frame-tranlsate: $circle-diameter / 2 ;
+
+
 .orbit-sphere-scene {
     position: absolute;
     margin: 50px 10px;
-    width: 500px;
-    height: 500px;
+    width: $circle-diameter;
+    height: $circle-diameter;
     padding: 0;
+    margin-left: 0;
+}
+
+.orbiting-sphere {
+    position: absolute;
+    margin-left: ($circle-diameter / 2) - ($sphere-diameter / 2);
+    margin-top: ($circle-diameter / 2) - ($sphere-diameter / 2);
+    width: $sphere-diameter;
+    height: $sphere-diameter;
+    padding: 0;
+}
+
+.animating-orbit {
+    animation: orbit 4s linear infinite;
+}
+
+@keyframes orbit {
+     from { transform: rotate(0deg) translateX($animation-frame-tranlsate) rotate(0deg); }
+     to   { transform: rotate(360deg) translateX($animation-frame-tranlsate) rotate(360deg); }
 }
