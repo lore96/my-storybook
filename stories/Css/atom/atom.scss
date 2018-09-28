@@ -1,0 +1,29 @@
+@import '../orbitSphere/orbitSphereStories.scss';
+.atom-container {
+    transform: rotateY(1,1,1, 45deg) rotateX(1,1,1, 45deg);
+    transform-style: preserve-3d;
+}
+$nucleus-diameter: 100px;
+
+.orbiting-rotate__90 {
+    transform: rotate3d(1, 1, 1, 90deg);
+}
+
+.orbiting-rotate__180 {
+    transform: rotate3d(1, 1, 1, 180deg);
+}
+
+.orbiting-rotate__250 {
+    transform: rotate3d(1, 1, 1, 250deg);
+}
+
+.atom-nucleus {
+    padding: 0;
+    width: $nucleus-diameter;
+    height: $nucleus-diameter;
+    position: absolute;
+    background-color: #011A26;
+    border-radius: 50%;
+    margin-top: $circle-diameter / 2 - ($nucleus-diameter / 2);
+    margin-left: $circle-diameter / 2 - ($nucleus-diameter / 2);
+}

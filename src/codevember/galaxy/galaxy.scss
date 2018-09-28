@@ -1,0 +1,62 @@
+#root {
+    padding: 0px;
+}
+.galaxy-container {
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    background-color: rgb(9,76,114);
+    background-repeat: repeat-x;
+}
+
+@for $i from 1 to 300 {
+    .star-container-large-#{$i} {
+        width: 3px;
+        height: 3px;
+        position: absolute;
+        border-radius: 50%;
+        padding: 0px;
+        top: random(1024) + px;
+        left: random(1024) + px;
+        animation: blink random(10) + s linear infinite;
+    }
+
+    .star-container-medium-#{$i} {
+        width: 2px;
+        height: 2px;
+        position: absolute;
+        border-radius: 50%;
+        // background-color: white;
+        padding: 0px;
+        top: random(1024) + px;
+        left: random(1024) + px;
+        animation: blink random(10) + s linear infinite;
+    }
+
+    .star-container-small-#{$i} {
+        width: 1px;
+        height: 1px;
+        position: absolute;
+        border-radius: 50%;
+        // background-color: white;
+        padding: 0px;
+        top: random(1024) + px;
+        left: random(1024) + px;
+        animation: blink random(6) + s linear infinite;
+    }
+}
+
+@keyframes blink {
+    0% {
+        background-color: rgba(255, 255, 255, 1);
+
+    }
+
+    50% {
+        background-color: rgba(255, 255, 255, 0.2);
+    };
+
+    100% {
+        background-color: rgba(255, 255, 255, 1);
+    }
+}

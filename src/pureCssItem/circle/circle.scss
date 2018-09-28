@@ -1,0 +1,13 @@
+.circle  {
+    box-sizing: border-box;
+    position: absolute;
+    top:0;
+    left:0;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    border: dotted 1em;
+    padding: 0;
+    color: #9ACAED;
+    z-index: 1;
+}
