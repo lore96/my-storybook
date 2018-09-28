@@ -1,13 +1,12 @@
-body {
-    background-color: rgb(9,76,114);
-    background-repeat: repeat-x;
-}
-
 #root {
     padding: 0px;
 }
 .galaxy-container {
+    width: 100vw;
+    height: 100vh;
     padding: 0px;
+    background-color: rgb(9,76,114);
+    background-repeat: repeat-x;
 }
 
 @for $i from 1 to 300 {
