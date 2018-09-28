@@ -11,16 +11,16 @@ for(let i=0; i<500; i++){
 }
 
 storiesOf('Codevember', module)
-  .add('Galaxy', () => (
+  .add('Day #1: Galaxy', () => (
     <div className="galaxy-container">
         {a.map((index) => {
-            return <div className={`star-container-large-${index}`}></div>;
+            return <div className={`star-container-large-${index}`} key={`large-${index}`}></div>;
         })}
         {a.map((index) => {
-            return <div className={`star-container-medium-${index}`}></div>;
+            return <div className={`star-container-medium-${index}`} key={`medium-${index}`}></div>;
         })}
         {a.map((index) => {
-            return <div className={`star-container-small-${index}`}></div>;
+            return <div className={`star-container-small-${index}`} key={`small-${index}`}></div>;
         })}
     </div>
   ));

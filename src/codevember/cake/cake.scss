@@ -1,0 +1,192 @@
+$plane-cake-width__bottom: 300px;
+$plane-cake-width__middle: 200px;
+$plane-cake-width__top: 100px;
+
+$plane-cake-height__bottom: 120px;
+$plane-cake-height__middle: 70px;
+$plane-cake-height__top: 60px;
+
+.cake-container {
+    margin: 400px 400px;
+    padding: 0px;
+}
+
+.cake-plane:nth-child(1) {
+    width: $plane-cake-width__top;
+    height: $plane-cake-height__top;
+    margin-left: (($plane-cake-width__bottom/2) - $plane-cake-width__top/2);
+    border: solid 1px #efde96;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+    margin-bottom: -2px;
+    background-color: #f9f3d8
+}
+
+.cake-plane:nth-child(2) {
+    width: $plane-cake-width__middle;
+    height: $plane-cake-height__middle;
+    margin-left: (($plane-cake-width__bottom/2) - $plane-cake-width__middle/2);
+    border: solid 1px #efde96;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+    margin-bottom: -2px;
+    background-color: #f9f3d8
+
+}
+
+.cake-plane:nth-child(3) {
+    width: $plane-cake-width__bottom;
+    height: $plane-cake-height__bottom;
+    border: solid 1px #efde96;
+    border-radius: 15%;
+    background-color: #f9f3d8
+
+}
+
+.drip-top-container {
+    padding: 0px;
+    position: relative;
+    height: 40%;
+    width: 105%;
+    margin-left: -4px;
+    margin-top: -3px;
+    border: solid 1px red;
+    padding: 0;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    background-color: red;
+    border-bottom-left-radius: 10px;
+}
+
+.drip-top {
+    display: inline;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: red;
+}
+
+.drip-top-shape-1 {
+    position: absolute;
+    margin: 5px;
+    width: 10px;
+    height: 30px;
+    background-color: red;
+}
+
+.drip-top-shape-2 {
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 0px;
+    width: 20px;
+    height: 50px;
+    background-color: red;
+}
+
+.drip-top-shape-3 {
+    position: absolute;
+    margin-left: 85px;
+    margin-top: 0px;
+    width: 10px;
+    height: 40px;
+    border-top-right-radius: 50px;
+    background-color: red;
+}
+
+
+.drip-middle-container {
+    padding: 0px;
+    position: relative;
+    height: 40%;
+    width: 105%;
+    margin-left: -8px;
+    margin-top: -3px;
+    border: solid 1px red;
+    padding: 0;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    background-color: red;
+    border-bottom-left-radius: 10px;
+}
+
+.drip-middle {
+    display: inline;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: red;
+}
+
+.drip-middle-shape-1 {
+    position: absolute;
+    margin: 20px;
+    width: 5px;
+    height: 20px;
+    background-color: red;
+}
+
+.drip-middle-shape-2 {
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 25px;
+    width: 10px;
+    height: 20px;
+    background-color: red;
+}
+
+.drip-middle-shape-3 {
+    position: absolute;
+    margin-left: 130px;
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+}
+
+
+.drip-bottom-container {
+    padding: 0px;
+    position: relative;
+    height: 40%;
+    width: 105%;
+    margin-left: -8px;
+    margin-top: -3px;
+    border: solid 1px red;
+    padding: 0;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    background-color: red;
+    border-bottom-left-radius: 10px;
+}
+
+.drip-bottom {
+    display: inline;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: red;
+}
+
+.drip-bottom-shape-1 {
+    position: absolute;
+    margin: 10px;
+    width: 10px;
+    height: 50px;
+    background-color: red;
+}
+
+.drip-bottom-shape-2 {
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 20px;
+    width: 20px;
+    height: 60px;
+    background-color: red;
+}
+
+.drip-bottom-shape-3 {
+    position: absolute;
+    margin-left: 190px;
+    margin-top: 30px;
+    width: 40px;
+    height: 40px;
+    border-top-right-radius: 50%;
+    background-color: red;
+}
