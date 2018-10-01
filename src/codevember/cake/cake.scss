@@ -6,8 +6,21 @@ $plane-cake-height__bottom: 120px;
 $plane-cake-height__middle: 70px;
 $plane-cake-height__top: 60px;
 
+$candle-width: 5px;
+$candle-height: 30px;
+$match-height: 6px;
+$match-width: 1px;
+
+$black:#111217;
+$brownl:#70392F;
+$brownd:#612E25;
+$yellow:#FFDC01;
+$orange:#FDAC01;
+$red:#F73B01;
+$animationtime:1.5s;
+
 .cake-container {
-    margin: 400px 400px;
+    margin: 10% 10%;
     padding: 0px;
 }
 
@@ -189,4 +202,152 @@ $plane-cake-height__top: 60px;
     height: 40px;
     border-top-right-radius: 50%;
     background-color: #F62459;
+}
+.candle {
+    width: 20vw;
+    position: absolute;
+    margin-left: ($plane-cake-width__bottom / 2) - ($candle-width / 2);
+    margin-top: - $candle-height;
+    padding: 0;
+    .cake-candle {
+        position: absolute;
+        width: $candle-width;
+        height: $candle-height;
+        border: solid 1px grey;
+        padding: 0;
+        background: repeating-linear-gradient(
+            45deg,
+            #ffffff,
+            #ffffff 5px,
+            #fd9df8 5px,
+            #fd9df8 10px
+        );
+    }
+
+    .match {
+        width: 0px;
+        height: $match-height;
+        border: 0.5px solid grey;
+        padding: 0px;
+        position: absolute;
+        top: -($match-height) - 1px;
+        margin-left: ($candle-width / 2) ;
+    }
+    
+    .fire {
+        position: absolute;
+        height:10vw;
+        padding: 0px;
+        width:10vw;
+        //background-color:$red;
+        .flames {
+           position: absolute;
+           width:10%;
+           height:10%;
+           top: -($candle-height / 2) - $match-height;
+           left: ($candle-width);
+           //background-color:$red;
+           border-radius: 50%;
+           transform:translateX(-50%)rotate(90deg);
+
+           .flame {
+              position: absolute;
+              right:0%;
+              bottom:0%;
+              width:0%;
+              height:0%;
+              border-radius: 50%;
+
+              background-color:$yellow;
+              &:nth-child(2n + 1) {
+                 animation: flameodd $animationtime ease-in infinite;
+              }
+              &:nth-child(2n) {
+                 animation: flameeven $animationtime ease-in infinite;
+              }
+              &:nth-child(1) {
+                 animation-delay:0s;
+              }
+              &:nth-child(2) {
+                 animation-delay:$animationtime/4;
+              }
+              &:nth-child(3) {
+                 animation-delay:$animationtime/4 * 2;
+              }
+              &:nth-child(4) {
+                 animation-delay:$animationtime/4 * 3;
+              }
+           }
+        }
+     }    
+}
+
+@keyframes flameodd {
+    0%, 100% {
+        width:0%;
+        height:0%;
+    }
+    25% {
+        width:100%;
+        height:100%;
+    }
+    0% {
+        background-color:$yellow;
+        z-index:1000000;
+    }
+    40% {
+        background-color:$orange;
+        z-index:1000000;
+    }
+    100% {
+        background-color:$red;
+        z-index:-10;
+    }
+    0% {
+        right:0%;
+        bottom:0%;
+    }
+    25% {
+        right:1%;
+        bottom:2%;
+    }
+    100% {
+        right:150%;
+        bottom:170%;
+    }
+}
+
+@keyframes flameeven {
+    0%, 100% {
+        width:0%;
+        height:0%;
+    }
+    25% {
+        width:100%;
+        height:100%;
+    }
+    0% {
+        background-color:$yellow;
+        z-index:1000000;
+    }
+    40% {
+        background-color:$orange;
+        z-index:1000000;
+    }
+    100% {
+        background-color:$red;
+        z-index:-10;
+    }
+    0% {
+        right:0%;
+        bottom:0%;
+    }
+    25% {
+        right:2%;
+        bottom:1%;
+    }
+    100% {
+        right:170%;
+        bottom:150%;
+    }
 }
