@@ -11,6 +11,14 @@ $candle-height: 30px;
 $match-height: 6px;
 $match-width: 1px;
 
+$bkg-plane: repeating-linear-gradient(
+    45deg,
+    #ffea8e,
+    #ffea8e 30px,
+    #f9f3d8 30px,
+    #f9f3d8 60px
+);
+
 $black:#111217;
 $brownl:#70392F;
 $brownd:#612E25;
@@ -32,7 +40,7 @@ $animationtime:1.5s;
     border-top-left-radius: 15%;
     border-top-right-radius: 15%;
     margin-bottom: -2px;
-    background-color: #f9f3d8
+    background: $bkg-plane
 }
 
 .cake-plane:nth-child(2) {
@@ -43,8 +51,7 @@ $animationtime:1.5s;
     border-top-left-radius: 15%;
     border-top-right-radius: 15%;
     margin-bottom: -2px;
-    background-color: #f9f3d8
-
+    background: $bkg-plane;
 }
 
 .cake-plane:nth-child(3) {
@@ -52,8 +59,7 @@ $animationtime:1.5s;
     height: $plane-cake-height__bottom;
     border: solid 1px #efde96;
     border-radius: 15%;
-    background-color: #f9f3d8
-
+    background: $bkg-plane;
 }
 
 .drip-top-container {
